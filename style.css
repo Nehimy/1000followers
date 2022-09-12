@@ -47,26 +47,26 @@ body {
     background:#ff50a7;
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 4vw;
+    line-height: 4vw;
+    display: grid;
+    align-content: center;
 }
 
 .triangle-one {
      width: 0;
      height: 0;
-     border-right: 65px solid #f0ad4e00;
-     border-top: 40px solid #ff80bf;
-     border-bottom: 40px solid #ff80bf;
-     /*right: 335px;
-     position: absolute;
-     top: 226px;*/
+     border-right: 6vw solid #f0ad4e00;
+     border-top: 40px solid #ff50a7;
+     border-bottom: 40px solid #ff50a7;
 }
 
 .triangle-two {
      width: 0;
      height: 0;
-     border-left: 65px solid #f0ad4e00;
-     border-top: 40px solid #ff80bf;
-     border-bottom: 40px solid #ff80bf;
+     border-left: 6vw solid #f0ad4e00;
+     border-top: 40px solid #ff50a7;
+     border-bottom: 40px solid #ff50a7;
 }
 
 .container-title {
@@ -80,8 +80,8 @@ body {
     display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -94,229 +94,87 @@ body {
     height: 5px;
     background: white;
     border-radius: 2px;
+     animation: led-one 8s infinite;
 
 }
 
-.container-led .circle.one {
-    grid-column: 3/4;
-    grid-row: 19/20;
+.new-circle {
+    background: #1e1e1e;
+    animation: led-two 8s infinite;
+}
+.content-img{
+    display: grid;
+    align-content: center;
 }
 
-.container-led .circle.two {
-    grid-column: 3/4;
-    grid-row: 18/19;
+img{
+    /* animation: move 8s infinite; */
+    animation: vertical 9s infinite;
+    transform: translateY(100px);
+
 }
 
-.container-led .circle.three {
-    grid-column: 3/4;
-    grid-row: 17/18;
+@keyframes vertical{
+    0% {
+        transform: translateY(100px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+
 }
 
-.container-led .circle.four {
-    grid-column: 3/4;
-    grid-row: 16/17;
+/* @keyframes move { */
+/*     from { */
+/*         width: 200px; */
+/*         opacity: 0; */
+/*     } */
+/*     to { */
+/*         width: 400px; */
+/*         opacity: 1; */
+/*     } */
+/* } */
+
+
+
+
+@keyframes led-one {
+    10%   {
+          background-color: #ff9a00;
+    }
+    25% {
+        background-color: #ff1bb1;
+    }
+    50% {
+        background-color:  #1e1e1e;
+    }
+    /* 75% { */
+    /*     background-color: #7bffec; */
+
+    /* } */
+    /* 100% {background-color:#ff00; */
+    /* } */
 }
+@keyframes led-two {
 
-.container-led .circle.five {
-    grid-column: 3/4;
-    grid-row: 15/16;
-}
+    10%   {
+          background-color: #05b020;
+    }
+    25% {
+        background-color: #ff9a00;
+    }
+    50% {
 
-.container-led .circle.six {
-    grid-column: 3/4;
-    grid-row: 14/15;
-}
+        background-color:  white;
 
-.container-led .circle.seven {
-    grid-column: 3/4;
-    grid-row: 13/14;
-}
+    }
+    /* 75% { */
+    /*     background-color: #ff7bd2; */
 
-.container-led .circle.eight {
-    grid-column: 3/4;
-    grid-row: 12/13;
-}
-
-.container-led .circle.nine {
-    grid-column: 3/4;
-    grid-row: 11/12;
-}
-
-.container-led .circle.ten {
-    grid-column: 3/4;
-    grid-row: 10/11;
-}
-
-.container-led .circle.eleven {
-    grid-column: 3/4;
-    grid-row: 9/10;
-}
-
-.container-led .circle.twelve {
-    grid-column: 3/4;
-    /*grid-row: 8/9;*/
-    grid-row: 7/9;
-}
-
-.container-led .circle.thirteen {
-    /*grid-column: 3/4;
-    grid-row: 7/8;*/
-    grid-column: 1/7;
-    grid-row: 6/8;
-}
-
-.container-led .circle.fourteen {
-    grid-column: 4/5;
-    /*grid-row: 6/7;*/
-    grid-row: 5/7;
-}
-
-.container-led .circle.fiveteen {
-    grid-column: 5/6;
-    /*grid-row: 5/6;*/
-    grid-row: 4/6;
-}
-
-.container-led .circle.seventeen {
-    grid-column: 6/7;
-    /*grid-row: 4/5;*/
-    grid-row: 3/5;
-}
-
-.container-led .circle.eighteen {
-    grid-column: 6/7;
-    grid-row: 4/5;
-}
-
-.container-led .circle.nineteen {
-    grid-column: 7/8;
-    grid-row: 3/4;
-}
-
-.container-led .circle.twenty {
-    grid-column: 8/9;
-    /*grid-row: 3/4;*/
-    grid-row: 2/4;
-}
-
-.container-led .circle.twenty-one {
-    grid-column: 9/10;
-    /*grid-row: 3/4;*/
-    grid-row: 2/4;
-}
-
-.container-led .circle.twenty-two {
-    grid-column: 10/11;
-    grid-row: 2/4;
-}
-
-.container-led .circle.twenty-three {
-    grid-column: 11/12;
-    grid-row: 2/4;
-}
-
-.container-led .circle.twenty-four {
-    grid-column: 12/13;
-    grid-row: 2/4;
-}
-
-.container-led .circle.twenty-six {
-    grid-column: 13/14;
-    grid-row: 2/4;
-}
-
-.container-led .circle.twenty-seven {
-    grid-column: 14/15;
-    grid-row: 2/4;
-}
-
-.container-led .circle.twenty-eight {
-    grid-column: 15/16;
-    grid-row: 3/4;
-}
-
-.container-led .circle.twenty-nine {
-    grid-column: 16/17;
-    grid-row: 4/5;
-}
-
-.container-led .circle.thirty {
-    grid-column: 17/18;
-    /*grid-row: 5/6;*/
-    grid-row: 4/6;
-}
-
-.container-led .circle.thirty-one {
-    grid-column: 18/19;
-    /* grid-row: 6/7; */
-
-    grid-row: 5/7;
-}
-
-.container-led .circle.thirty-two {
-    /*grid-column: 19/20;
-    grid-row: 7/8;*/
-
-    grid-column: 18/20;
-    grid-row: 6/8;
-}
-
-.container-led .circle.thirty-three {
-    grid-column: 19/20;
-    grid-row: 8/9;
-}
-
-.container-led .circle.thirty-four {
-    grid-column: 19/20;
-    grid-row: 9/10;
-}
-
-.container-led .circle.thirty-six {
-    grid-column: 19/20;
-    grid-row: 10/11;
-}
-
-.container-led .circle.thirty-seven {
-    grid-column: 19/20;
-    grid-row: 11/12;
-}
-
-.container-led .circle.thirty-eight {
-    grid-column: 19/20;
-    grid-row: 12/13;
-}
-
-.container-led .circle.thirty-nine {
-    grid-column: 19/20;
-    grid-row: 13/14;
-}
-
-.container-led .circle.fourty {
-    grid-column: 19/20;
-    grid-row: 14/15;
-}
-
-.container-led .circle.fourty-one {
-    grid-column: 19/20;
-    grid-row: 15/16;
-}
-
-.container-led .circle.fourty-two {
-    grid-column: 19/20;
-    grid-row: 16/17;
-}
-
-.container-led .circle.fourty-three {
-    grid-column: 19/20;
-    grid-row: 17/18;
-}
-
-.container-led .circle.fourty-four {
-    grid-column: 19/20;
-    grid-row: 18/19;
-}
-
-.container-led .circle.fourty-five {
-    grid-column: 19/20;
-    grid-row: 19/20;
+    /* } */
+    /* 100% {background-color:#ff00; */
+    /* } */
 }
