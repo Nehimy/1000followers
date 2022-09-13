@@ -8,7 +8,8 @@
 
 body {
     /*background: #414558;*/
-    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(32, 2, 68) 100%);
+    /* background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(32, 2, 68) 100%); */
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(44, 9, 121) 35%, rgb(32, 2, 68) 100%);
     margin: 0;
 }
 
@@ -94,13 +95,13 @@ body {
     height: 5px;
     background: white;
     border-radius: 2px;
-     animation: led-one 8s infinite;
+    animation: led-one 5s infinite;
 
 }
 
 .new-circle {
     background: #1e1e1e;
-    animation: led-two 8s infinite;
+    animation: led-two 2s infinite;
 }
 .content-img{
     display: grid;
@@ -109,7 +110,7 @@ body {
 
 img{
     /* animation: move 8s infinite; */
-    animation: vertical 9s infinite;
+    animation: vertical 5s infinite;
     transform: translateY(100px);
 
 }
@@ -169,6 +170,9 @@ img{
     50% {
 
         background-color:  white;
+        width: 7px;
+        height: 7px;
+        border-radius: 3.5px;
 
     }
     /* 75% { */
