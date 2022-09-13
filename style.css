@@ -105,6 +105,10 @@ body {
     animation: led-two 2s infinite;
 }
 
+
+
+
+/****************************************/
 .content-images{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -120,17 +124,11 @@ body {
     grid-row: 1/2;
 }
 
-.content-globes{
+.globes1{
     display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
 }
-
-/* .content-globes .globes1{ */
-/*     display: grid; */
-/*     grid-column: 1/2; */
-/*     grid-row: 1/2; */
-/* } */
 
 .globes2{
     display: grid;
@@ -138,11 +136,23 @@ body {
     grid-row: 1/2;
 }
 
+.globes1 .img1 {
+    width: 25vw;
+}
+
+.content-chibi .img2 {
+    width: 25vw;
+}
+
+.globes2 .img3 {
+    width: 25vw;
+}
+
 
 .content-images .content-chibi .img2{
     /* animation: move 8s infinite; */
-    animation: vertical 5s infinite;
-    transform: translateY(100px);
+    /* animation: vertical 5s infinite; */
+    /* transform: translateY(100px); */
 
 }
 
