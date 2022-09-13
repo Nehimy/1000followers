@@ -113,9 +113,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* overflow: hidden; */
 }
 
 .content-chibi{
@@ -148,11 +145,34 @@ body {
     width: 25vw;
 }
 
+.img1{
+    animation: transparent 5s infinite;
+    opacity: 0;
+}
+
+.img3{
+    animation: transparent 5s infinite;
+    opacity: 0;
+}
+
 
 .content-images .content-chibi .img2{
-    /* animation: move 8s infinite; */
-    /* animation: vertical 5s infinite; */
-    /* transform: translateY(100px); */
+    animation: vertical 5s infinite;
+    transform: translateY(100px);
+
+}
+
+@keyframes transparent {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 
 }
 
