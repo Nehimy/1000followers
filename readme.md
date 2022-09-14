@@ -12,4 +12,6 @@ Esto es una animación con CSS y además uso grid para alinear los  elementos.
 
 - @kj2me por ayudarme con la matriz de puntitos y darme una idea de animmación, entre otras cosas, siempre me da pempujes para avanzar.
 
+![1000followers CSS](https://i.imgur.com/w2dYEpF.png)
+![1000followers CSS](https://i.imgur.com/7ioG0eK.png)
 ![1000followers CSS](https://i.imgur.com/xRI4rFc.png)
